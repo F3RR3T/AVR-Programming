@@ -8,7 +8,7 @@
 int main(void) {
 
   // -------- Inits --------- //
-  DDRB |= 0b0000001;            /* Data Direction Register B:
+  DDRB |= 0b00000001;            /* Data Direction Register B:
                                    writing a one to the bit
                                    enables output. */
 
@@ -22,5 +22,5 @@ int main(void) {
     _delay_ms(1000);                                           /* wait */
 
   }                                                  /* End event loop */
-  return (0);                            /* This line is never reached */
+  return 0;                            /* This line is never reached */
 }
